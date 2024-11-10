@@ -1,0 +1,234 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #EAECEA;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    color: #131513;
+    text-transform: uppercase;
+    background-color: #9FA89F;
+    padding: 20px;
+    margin: 0 0 50px 0;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #7982783a;
+    border: 3px solid #576057;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  fieldset {
+    border: 3px solid #576057;
+    padding: 15px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="file"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #8d8181;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #90978F;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ABB1AA;
+  }
+  
+  /* Two-column layout styling */
+  .resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    
+    
+  }
+  .left-section{
+    margin-left: 20px;
+    
+  }
+  .left-section,
+  .right-section {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+  }
+  
+  .left-section {
+    background-color: #978a8a79; 
+    width: 30%;
+    max-width: 300px;
+  }
+  
+  .right-section {
+    background-color: white;
+    flex: 1;
+  }
+  
+  .right-section h3 {
+    margin: 20px 0;
+  }
+  
+  .right-section p {
+    margin-left: 15px;
+  }
+  
+  /* Profile picture styling */
+  .left-section img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #5e787dd8;
+  }
+  
+  .left-section h3.border {
+    border-bottom: 2px solid #5e787d;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .left-section p.text-color {
+    color: #5e787d;
+    word-wrap: break-word;     
+    overflow-wrap: break-word; 
+    white-space: normal;       
+    line-height: 1.6;
+  }
+  h3 {
+    color: #5e787dd8;
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+  
+  p {
+    margin: 5px 0;
+    line-height: 1.6;
+  }
+  
+  .profession-cen {
+    background-color: #5e787d;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .section-container {
+    border: 2px solid #576057;  /* Border around the section */
+    padding: 15px;              /* Padding inside the border */
+    border-radius: 8px;         /* Rounded corners */
+    margin-bottom: 20px;        /* Space between sections */
+  }
+  
+  .section-container h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #5e787dd8;
+    border-bottom: 1px solid #8d8181; /* Optional bottom border for heading */
+    padding-bottom: 5px;
+  }
+  
+  .section-container p {
+    margin-left: 15px;
+    line-height: 1.6;
+  }
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .left-section {
+      width: 35%;
+    }
+    .right-section {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .resume-container {
+      flex-direction: column;
+    }
+    .left-section,
+    .right-section {
+      width: 100%;
+    }
+    .left-section img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5em;
+      padding: 15px;
+    }
+    form {
+      padding: 20px;
+    }
+    .left-section img {
+      width: 100px;
+      height: 100px;
+    }
+    p {
+      font-size: 14px;
+    }
+    button[type="submit"] {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
